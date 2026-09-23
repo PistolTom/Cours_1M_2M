@@ -328,10 +328,10 @@ document.addEventListener('DOMContentLoaded', () => {
   button.className = 'quarto-color-scheme-toggle site-theme-switch';
   const icon = document.createElement('span');
   icon.setAttribute('aria-hidden', 'true');
-  icon.textContent = '☾';
   button.append(icon);
   function update() {
     const dark = document.body.classList.contains('quarto-dark');
+    icon.textContent = dark ? '☀' : '☾';
     button.setAttribute('aria-label', dark ? 'Activer le mode clair' : 'Activer le mode sombre');
     button.title = button.getAttribute('aria-label');
   }
