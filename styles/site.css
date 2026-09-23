@@ -40,8 +40,8 @@ body.quarto-dark .fiche-video-card small { color: #8dc8f4; }
 /* Commande de thème lisible et facile à toucher sur tablette. */
 .navbar .site-theme-switch {
   display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
-  min-height: 44px; width: auto; height: auto; flex: 0 0 auto;
-  padding: .4rem .8rem; margin-inline: .7rem;
+  min-height: 44px; width: 44px; height: 44px; flex: 0 0 auto;
+  padding: .4rem; margin-inline: .7rem;
   border: 1px solid var(--site-border); border-radius: .55rem;
   background: var(--site-card); color: var(--site-text);
   font: inherit; font-size: .9rem; font-weight: 600;
