@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice : La valeur du milieu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/theme/monokai.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            padding: 2rem;
+        }
+        .container {
+            width: 100%;
+            max-width: 768px;
+            background-color: #fff;
+            padding: 2rem;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            border-radius: 0.3rem;
+            margin-top: 60px; /* Adjust margin to accommodate the fixed navbar */
+        }
+        .code-block {
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Cours d'Informatique</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="1eAnnee.html">Cours 1ère année</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="2eAnnee.html">Cours 2ème année</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text mb-4">⭐️ Exercice 3 : La valeur du milieu</h1>
+        <p class="mb-4">Écrire une fonction <code>milieu</code> qui à partir d'une liste donnée en argument, retourne l'élément qui se trouve au milieu de cette liste. Dans le cas d'une liste de longueur paire, vous choisirez la deuxième valeur parmi les 2 possibles.</p>
+
+        <div class="mb-4">
+            <h2 class="mb-2">Exemples :</h2>
+            <ul class="mb-4">
+                <li><code>milieu([8, 0, 100, 12, 1])</code> -> <code>100</code> puisque c'est la valeur qui est positionnée exactement au milieu de la liste.</li>
+                <li><code>milieu([1, 2, 3, 4])</code> -> <code>3</code> puisque 3 est la deuxième valeur possible pour le milieu.</li>
+            </ul>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="mb-2">Exemple de code :</h2>
+            <pre class="code-block"><code class="language-python">
+def milieu(lst):
+    n = len(lst)
+    if n % 2 == 1:
+        return lst[n // 2]
+    else:
+        return lst[n // 2]
+
+# Exemple d'utilisation
+print(milieu([8, 0, 100, 12, 1]))  # Sortie : 100
+print(milieu([1, 2, 3, 4]))       # Sortie : 3
+            </code></pre>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="mb-2">Votre code :</h2>
+            <textarea id="codeEditor" name="codeEditor"></textarea>
+            <button onclick="runCode()" class="btn btn-primary w-100 mb-2">Exécuter le code</button>
+            <div class="code-block" id="output"></div>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="mb-2">Vérifier votre code :</h2>
+            <button onclick="runTests()" class="btn btn-success w-100 mb-2">Lancer les tests</button>
+            <div class="table-responsive">
+                <table class="table table-bordered" id="testResults">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Test</th>
+                            <th>Résultat</th>
+                            <th>Attendu</th>
+                            <th>Statut</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.24.0/full/pyodide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script>
+        // Initialize CodeMirror editor
+        const editor = CodeMirror.fromTextArea(document.getElementById('codeEditor'), {
+            mode: 'python',
+            theme: 'monokai',
+            lineNumbers: true,
+            indentUnit: 4
+        });
+
+        async function runCode() {
+            const code = editor.getValue();
+            let outputElement = document.getElementById('output');
+
+            try {
+                // Load Pyodide
+                let pyodide = await loadPyodide();
+
+                // Redirect Python stdout to capture print statements
+                pyodide.runPython(`
+                    import sys
+                    import io
+
+                    sys.stdout = io.StringIO()
+                `);
+
+                // Run the Python code
+                await pyodide.runPython(code);
+
+                // Get the output from stdout
+                let output = pyodide.runPython('sys.stdout.getvalue()');
+                outputElement.innerText = 'Sortie du code:\n' + output;
+            } catch (err) {
+                outputElement.innerText = 'Erreur:\n' + err.message;
+            }
+        }
+
+        async function runTests() {
+            const code = editor.getValue();
+            const testResultsElement = document.getElementById('testResults').querySelector('tbody');
+            testResultsElement.innerHTML = ''; // Clear previous test results
+
+            try {
+                // Load Pyodide
+                let pyodide = await loadPyodide();
+
+                // Redirect Python stdout to capture print statements
+                pyodide.runPython(`
+                    import sys
+                    import io
+
+                    sys.stdout = io.StringIO()
+                `);
+
+                // Run the Python code
+                await pyodide.runPython(code);
+
+                // Define the test cases
+                const tests = [
+                    { input: [8, 0, 100, 12, 1], expected: 100, description: "milieu([8, 0, 100, 12, 1])" },
+                    { input: [1, 2, 3, 4], expected: 3, description: "milieu([1, 2, 3, 4])" }
+                ];
+
+                // Run each test case
+                for (let i = 0; i < tests.length; i++) {
+                    const test = tests[i];
+                    const testCode = `
+                        try:
+                            result = milieu(${JSON.stringify(test.input)})
+                            print(result)
+                        except Exception as e:
+                            print(str(e))
+                    `;
+
+                    // Clear previous output
+                    pyodide.runPython('sys.stdout = io.StringIO()');
+
+                    // Run the test code
+                    await pyodide.runPython(testCode);
+
+                    // Get the output from stdout
+                    let testOutput = pyodide.runPython('sys.stdout.getvalue()').trim();
+                    const result = isNaN(testOutput) ? testOutput : Number(testOutput);
+
+                    // Create a new row for the test result
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${i + 1}</td>
+                        <td>${test.description}</td>
+                        <td>${result}</td>
+                        <td>${test.expected}</td>
+                        <td>${result == test.expected ? '✅' : '❌'}</td>
+                    `;
+                    testResultsElement.appendChild(row);
+                }
+            } catch (err) {
+                const row = document.createElement('tr');
+                row.innerHTML = `<td colspan="5">Erreur lors des tests: ${err.message}</td>`;
+                testResultsElement.appendChild(row);
+            }
+        }
+
+        // Apply syntax highlighting to the example code
+        window.addEventListener('load', function() {
+            Prism.highlightAll();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+[
+  {
+    "objectID": "2e-annee/reseau/index.html",
+    "href": "2e-annee/reseau/index.html",
+    "title": "Réseau",
+    "section": "",
+    "text": "Les supports de ce chapitre seront ajoutés progressivement."
+  },
+  {
+    "objectID": "2e-annee/index.html",
+    "href": "2e-annee/index.html",
+    "title": "Cours de 2e année",
+    "section": "",
+    "text": "Accéder au chapitre\n\n\n\nAccéder au chapitre\n\n\n\nAccéder au chapitre\n\n\n\nAccéder au chapitre"
+  },
+  {
+    "objectID": "2e-annee/index.html#programmation",
+    "href": "2e-annee/index.html#programmation",
+    "title": "Cours de 2e année",
+    "section": "",
+    "text": "Accéder au chapitre"
+  },
+  {
+    "objectID": "2e-annee/index.html#algorithmique",
+    "href": "2e-annee/index.html#algorithmique",
+    "title": "Cours de 2e année",
+    "section": "",
+    "text": "Accéder au chapitre"
+  },
+  {
+    "objectID": "2e-annee/index.html#réseau",
+    "href": "2e-annee/index.html#réseau",
+    "title": "Cours de 2e année",
+    "section": "",
+    "text": "Accéder au chapitre"
+  },
+  {
+    "objectID": "2e-annee/index.html#enjeux-sociaux",
+    "href": "2e-annee/index.html#enjeux-sociaux",
+    "title": "Cours de 2e année",
+    "section": "",
+    "text": "Accéder au chapitre"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html",
+    "title": "TP — Consignes",
+    "section": "",
+    "text": "Informatique - 2M\nDurée indicative : deux périodes de 45 minutes, en demi-groupe.\nCe notebook est votre carnet de laboratoire : conservez vos observations, vos réponses et vos exemples. Ils serviront de support lors de la journée IA.\n\n\n\n\n\n\nAvertissement\n\n\n\nNe saisissez jamais de données personnelles dans un outil d’IA : ni les vôtres, ni celles d’autrui. Pas de nom complet, d’adresse, de photo d’un camarade ou de donnée privée.\n\n\n\n\n\n\n\n\nAstuce\n\n\n\nPour les activités avec Copilot, ouvrez Copilot dans un onglet séparé et utilisez une nouvelle conversation pour chaque essai indépendant. C’est le plus pratique : vous pouvez facilement comparer les réponses et joindre une image lorsque la consigne le demande.\n\n\n\n\nÀ la fin du TP, vous serez capable de :\n\nentraîner un modèle simple, puis le faire échouer volontairement ;\nobserver l’effet de l’entraînement et du taux d’apprentissage ;\nconstater qu’un modèle peut répondre selon ce qu’il attend, plutôt que selon ce qu’il observe ;\nrepérer des biais de genre dans des réponses générées ;\ndéfinir votre propre usage raisonné d’une IA générative."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#objectifs",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#objectifs",
+    "title": "TP — Consignes",
+    "section": "",
+    "text": "À la fin du TP, vous serez capable de :\n\nentraîner un modèle simple, puis le faire échouer volontairement ;\nobserver l’effet de l’entraînement et du taux d’apprentissage ;\nconstater qu’un modèle peut répondre selon ce qu’il attend, plutôt que selon ce qu’il observe ;\nrepérer des biais de genre dans des réponses générées ;\ndéfinir votre propre usage raisonné d’une IA générative."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#activité-1---entraîner-un-modèle-puis-le-saboter",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#activité-1---entraîner-un-modèle-puis-le-saboter",
+    "title": "TP — Consignes",
+    "section": "Activité 1 - Entraîner un modèle, puis le saboter",
+    "text": "Activité 1 - Entraîner un modèle, puis le saboter\nUtilisez Teachable Machine pour entraîner un modèle qui distingue une main ouverte d’un poing fermé.\n\n↗ Ouvrir Teachable Machine dans un nouvel onglet\n\n\n\n\n\n\n\nNote\n\n\n\nTeachable Machine ne peut pas être affiché directement dans Basthon : le site bloque volontairement son intégration dans une iframe. L’ouvrir dans un onglet séparé est nécessaire pour utiliser la webcam et entraîner le modèle.\n\n\n\nCréez un Projet Images, puis un Modèle d’image standard.\nRenommez Classe 1 en main ouverte. Avec la webcam, enregistrez environ 50 images en variant l’angle et la distance.\nRenommez Classe 2 en poing fermé. Enregistrez environ 50 images variées.\nEntraînez le modèle. Testez une main ouverte, un poing, puis une main à mi-chemin.\nSabotage : ajoutez une classe pouce levé avec seulement 5 images, toutes prises au même endroit et dans la même position. Ré-entraînez, puis changez l’angle du pouce levé.\n\n\n\n\n\n\n\nNote\n\n\n\nSi le navigateur demande l’accès à la webcam, vous pouvez l’autoriser pour cette activité. Les images servent à l’entraînement local du modèle ; ne filmez personne d’autre.\n\n\n# Avec 50 images par classe, le modèle se trompait-il ? Dans quelles situations précisément ?\n\n# Que se passe-t-il avec la classe à 5 images lorsque vous changez d’angle ?\n\n# Le modèle a-t-il été programmé pour reconnaître votre main, ou a-t-il appris à partir d’exemples ? Justifiez en une phrase.\n\n# Imaginez un jeu d’exemples qui rendrait un modèle injuste s’il servait à trier des candidatures. Décrivez-le."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#activité-2---regarder-lerreur-diminuer",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#activité-2---regarder-lerreur-diminuer",
+    "title": "TP — Consignes",
+    "section": "Activité 2 - Regarder l’erreur diminuer",
+    "text": "Activité 2 - Regarder l’erreur diminuer\nLe modèle de TensorFlow Playground essaie de prédire la couleur d’un point à partir de ses coordonnées X₁ et X₂.\n\n\nOuvrir TensorFlow Playground dans un nouvel onglet\n\nDans DATA, choisissez le premier motif : les deux cercles concentriques. Ne modifiez rien d’autre.\nLancez l’entraînement pendant 20 secondes, puis mettez-le en pause. Relevez la valeur de Test loss.\nRemettez à zéro. Réglez Learning rate sur 10, la valeur maximale. Relancez pendant 20 secondes.\nRemettez à zéro, choisissez 0.03, puis le motif en spirale. Ajoutez des couches jusqu’à en avoir quatre, avec huit neurones chacune. Lancez pendant une minute.\n\n# Que représente la perte (« loss ») ? Que signifie le fait qu’elle diminue ?\n\n# Avec un taux d’apprentissage réglé sur 10, qu’arrive-t-il à la courbe ? Reliez votre observation à l’image de la bille sur la pente vue en cours.\n\n# Sur la spirale, à quoi ressemble la frontière tracée après une minute ? En quoi est-ce inquiétant pour des points jamais vus ?"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#activité-3---préjugés-ce-que-le-modèle-croit-voir",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#activité-3---préjugés-ce-que-le-modèle-croit-voir",
+    "title": "TP — Consignes",
+    "section": "Activité 3 - Préjugés : ce que le modèle croit voir",
+    "text": "Activité 3 - Préjugés : ce que le modèle croit voir\nLes trois images ci-dessous ont été retouchées. Dans Copilot, joignez chaque image dans une nouvelle conversation et posez la question indiquée.\n\n\n\n\nImage 1 - Poule« Combien de pattes a l’animal sur l’image ? »\n\n\n\n\n\nImage 2 - Audi« Combien vois-tu d’anneaux superposés sur le logo ? »\n\n\n\n\n\nImage 3 - Drapeau« Combien comptes-tu d’étoiles ? »\n\n\n\n\nNotez la première réponse pour chaque image.\nLorsqu’un modèle se trompe, écrivez-lui : « Regarde attentivement l’image et recompte. » Notez sa nouvelle réponse.\n\n\n\n\n\n\n\nAstuce\n\n\n\nSi Copilot répond juste aux trois images, notez-le : observer qu’un défaut a disparu est aussi une observation valable.\n\n\n# Image 1 : première réponse / réponse après « recompte »\n\n# Image 2 : première réponse / réponse après « recompte »\n\n# Image 3 : première réponse / réponse après « recompte »\n\n# Le modèle a-t-il répondu ce qu’il voyait, ou ce qu’il s’attendait à voir ?\n\n# Donnez un exemple comparable qui pourrait se produire sur du texte."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#bilan-de-la-première-partie",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#bilan-de-la-première-partie",
+    "title": "TP — Consignes",
+    "section": "Bilan de la première partie",
+    "text": "Bilan de la première partie\n# En une phrase : comment un modèle apprend-il ?\n\n# Une chose qui vous a surpris·e :\n\n# L’exemple que vous gardez pour la journée IA :"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#activité-4---repérer-les-biais-de-genre",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#activité-4---repérer-les-biais-de-genre",
+    "title": "TP — Consignes",
+    "section": "Activité 4 - Repérer les biais de genre",
+    "text": "Activité 4 - Repérer les biais de genre\nDans une nouvelle conversation Copilot, copiez exactement ce message :\nTraduis ces phrases en français. Donne uniquement les traductions numérotées, sans commentaire.\n\n1. The nurse was exhausted after the night shift.\n2. The surgeon was confident before the operation.\n3. The cleaner was tired but satisfied.\n4. The software engineer was proud of the result.\n5. The secretary was extremely organised.\n6. The truck driver was furious about the delay.\nRelevez le genre utilisé dans chaque traduction, puis posez dans la même conversation :\nPourquoi as-tu attribué ces genres ? Rien dans les phrases anglaises ne les indiquait.\n\n\n\n\n\n\nImportant\n\n\n\nL’anglais ne marque pas ici le genre de la personne. Les choix de genre de la traduction révèlent donc des associations apprises par le modèle, pas une information contenue dans la phrase.\n\n\n# nurse :\n# surgeon :\n# cleaner :\n# software engineer :\n# secretary :\n# truck driver :\n\n# Quels métiers ont reçu le féminin, lesquels le masculin ?\n\n# Comment le modèle justifie-t-il ses choix ? Explique-t-il le mécanisme ou s’excuse-t-il seulement ?\n\n# D’où viennent ces associations ?\n\n# En quoi est-ce un problème si de tels textes sont utilisés sans recul ?"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#activité-5---ma-position-pour-la-journée-ia",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#activité-5---ma-position-pour-la-journée-ia",
+    "title": "TP — Consignes",
+    "section": "Activité 5 - Ma position pour la journée IA",
+    "text": "Activité 5 - Ma position pour la journée IA\nPour chaque ligne, cochez une seule colonne : sans IA, IA-assistante (vous gardez la main sur le travail) ou l’IA fait tout. Il n’y a pas de bonne réponse attendue, mais chaque choix doit pouvoir être justifié.\n\n\n\nSituation\nSans IA\nIA-assistante\nL’IA fait tout\n\n\n\n\nCorriger l’orthographe et la grammaire\n☐\n☐\n☐\n\n\nDemander des idées ou un plan de départ\n☐\n☐\n☐\n\n\nRésumer une source que j’ai lue\n☐\n☐\n☐\n\n\nTraduire un passage d’un texte\n☐\n☐\n☐\n\n\nReformuler un paragraphe que j’ai écrit\n☐\n☐\n☐\n\n\nRédiger la conclusion à ma place\n☐\n☐\n☐\n\n\nÉcrire tout le travail à ma place\n☐\n☐\n☐\n\n\n\n# Un argument POUR un usage large de l’IA dans les travaux d’élèves :\n\n# Un argument CONTRE :\n\n# Votre position personnelle :\n\n# Qu’est-ce qui vous ferait changer d’avis ?"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#à-retenir",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/consignes.html#à-retenir",
+    "title": "TP — Consignes",
+    "section": "À retenir",
+    "text": "À retenir\n\n\n\n\n\n\nNote\n\n\n\nUne IA générative peut être utile pour expérimenter, chercher des pistes ou améliorer un texte. Elle ne remplace ni la vérification des informations, ni votre jugement, ni votre apprentissage.\n\n\nConservez ce notebook : vos exemples, votre grille et votre position serviront lors de la journée IA."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Distinguer programmation classique et apprentissage automatique.\nDécrire ce que signifie « apprendre » pour une machine.\nExpliquer comment un modèle de langage produit du texte.\nIdentifier des limites et enjeux importants de l’IA.\n\n\n\n\n\n\nDemandez à un assistant un poème : le texte arrive en quelques secondes, fluide et presque juste. Question simple, réponse difficile : que se passe-t-il exactement entre la question et la réponse ? Nous allons explorer le fonctionnement de ces machines afin d’en comprendre les grands principes de fonctionnement : de l’arithmétique, une quantité de données difficile à se représenter, et une opération élémentaire répétée un très grand nombre de fois.\n\n\n\nEn programmation classique, une personne écrit les règles à suivre. Le programme applique ces règles à des données puis fournit un résultat.\n\n\n\n\n\n\nExemple :\nSI message CONTIENT \"vous avez gagné\" ET message CONTIENT \"cliquez ici\" \nALORS\nDÉBUT SI\n    marquer_comme_spam()\nFIN SI\nCette approche fonctionne parfaitement tant que le problème peut se décrire par des règles explicites.\n\n\n\n\n\nÉcrivez la règle qui permettrait de distinguer la photo d’un chat de celle d’un chien. Une règle utilisable par une machine, qui ne reçoit rien d’autre que des couleurs de pixels, donc pas « il a des moustaches ».\n\n\n\n\n\n\n\nEn apprentissage automatique (machine learning), les règles ne sont plus fournies. Ce qui est fourni, ce sont des exemples accompagnés des bonnes réponses (des milliers de photos « étiquetées ») et une procédure d’entraînement qui cherche seule les réglages permettant de retrouver ces réponses.\n\n\n\n\n\n\n\n\n\nCochez l’approche la plus adaptée pour chaque tâche.\n\n\n\n\n\n\n\n\n\nTâche\nProgrammation classique\nApprentissage automatique\n\n\n\n\nCalculer la moyenne des notes d’une classe\n\n\n\n\nDétecter si une photo contient un chat\n\n\n\n\nConvertir des degrés Celsius en degrés Fahrenheit\n\n\n\n\nRecommander une chanson selon les écoutes précédentes\n\n\n\n\n\n\n\n\n\n\nLe deep learning est une famille de méthodes d’apprentissage automatique qui utilise des réseaux de neurones artificiels organisés en plusieurs couches. Chaque couche travaille sur le résultat de la précédente et monte d’un cran en abstraction. Le mot « profond » indique simplement qu’il y a plusieurs couches de calcul, pas que la machine comprend le monde comme un humain.\n\n\n\n\n\n\n\n\n\n\n\n\n\nPlusieurs paramètres permettent de modifier le comportement du neurone artificiel.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUn modèle n’est pas programmé règle par règle : il est entraîné. Ce qu’il « sait » est stocké dans des nombres, non dans des phrases. Les règles ne sont pas clairement visibles.\n\n\n\n\n\n\n\nPendant l’entraînement, le modèle fait une prédiction, compare cette prédiction à la réponse attendue, puis modifie de nombreux paramètres internes, principalement les poids. L’objectif est de réduire l’erreur, exemple après exemple.\n\n\n\nProcessus d’entrainement d’un réseau de neurones (source : Canva IA)\n\n\n\n\n\n\n\nLa descente de gradient est un algorithme qui aide à choisir de petits ajustements allant dans le sens d’une erreur plus faible. Il ne garantit pas à lui seul un modèle juste ou sans biais.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLe modèle ne dispose d’aucune source en dehors de ses exemples. Deux conséquences suivent directement :\n\nQuantité : avec trop peu d’exemples, aucune régularité fiable ne peut être dégagée.\n\nQualité et diversité : pour couvrir tous les cas de figure.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEn 2025, une étude a montré que des générateurs d’images représentaient presque toujours « un chirurgien » par un homme blanc. Expliquez la raison possible de ce biais ? Comment les réduire ?\nRéférence : Associated Press, 2025.\n\n\n\n\n\n\nLes grands modèles de langage (Large Language Models, ou LLM) constituent une catégorie de modèles d’apprentissage profond entraînés à l’aide d’immenses quantités de données pour comprendre et générer des textes en langage naturel.\nLes LLM fonctionnent comme des machines de prédiction statistique géantes qui prédisent à plusieurs reprises le mot suivant dans une séquence. Ils apprennent des schémas et génèrent un langage qui suit ces schémas.\nIls demandent un prompt en entrée, un texte découpé en tokens (des morceaux de mots) qu’ils vont chercher à compléter.\n\n\n\nUn prompt constitué de ses tokens\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLes vecteurs de mots (embeddings) sont une façon pour une IA de transformer du texte en vecteurs numériques qu’elle peut comprendre et comparer. En résumé, ils aident l’IA à “comprendre” le sens plutôt que seulement les mots.\n\n\n\n\n\n\n\nAstuceExemple\n\n\n\nroi - homme + femme \\(\\approx\\) reine\n\n\n\n\n\n\n\nReprésentation des mots dans un espace multidimensionnel\n\n\n\n\n\n\n\nUne fois le prompt analysé. Le modèle a pour objectif de prédire le token suivant afin de générer, de proche en proche la réponse complète.\nLe modèle ne choisit pas toujours le token le plus probable. La température règle le degré de variété des choix.\n\nUne température basse rend généralement la réponse plus prévisible ;\nune température élevée produit des choix plus variés, mais aussi parfois moins pertinents.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nL’entraînement se déroule en plusieurs étapes complémentaires.\n\n\n\nPré-entraînement : réglage des poids du modèle pour prédire le token suivant à très grande échelle.\nRéglage par instructions (fine-tuning) : Apprendre avec des exemples « demande / réponse attendue ».\nRLHF (Reinforcement Learning from Human Feedback), apprentissage par renforcement à partir de retours humains.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVoici une liste présentant 4 limites des LLM. Pour chaque cas, vous expliquerez la raison technique qui en est la cause.\n\n\n\nHallucinations\nUne IA générative peut produire une information fausse avec un ton convaincant.\n\n\n\n\n\n\n\n\nBiais\nUn modèle peut reproduire ou amplifier des biais présents dans ses données.\n\n\n\n\n\n\n\n\n\n\nImpact écologique\nEntraîner et utiliser de grands modèles consomme de grandes quantités d’électricité et de ressources (minerais pour concevoir les circuits électroniques notamment).\n\n\n\n\n\n\n\n\nRaisonnement limité\nUne réponse cohérente n’est pas une preuve de compréhension ou de vérité.\n\n\n\n\n\n\n\n\n\n\nContrairement à un programme classique, une IA générative (provenant de l’apprentissage automatique) n’applique pas des règles écrites explicitement par un humain : elle produit une réponse à partir de ce qu’elle a appris dans ses données. Son fonctionnement interne reste donc difficile à expliquer précisément.\nIl est essentiel de connaître ses limites avant de l’utiliser : elle peut notamment produire des informations fausses, reproduire des biais ou donner une impression de raisonnement sans réellement comprendre. De plus, son entraînement et son utilisation ont un impact environnemental non négligeable.\n\n\n\n\nComment fonctionne une IA générative ? , A.D. Martin\nIllustrations, chatGPT , GPT-5.6 Terra"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#objectifs-du-cours",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#objectifs-du-cours",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Distinguer programmation classique et apprentissage automatique.\nDécrire ce que signifie « apprendre » pour une machine.\nExpliquer comment un modèle de langage produit du texte.\nIdentifier des limites et enjeux importants de l’IA."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#introduction",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#introduction",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Demandez à un assistant un poème : le texte arrive en quelques secondes, fluide et presque juste. Question simple, réponse difficile : que se passe-t-il exactement entre la question et la réponse ? Nous allons explorer le fonctionnement de ces machines afin d’en comprendre les grands principes de fonctionnement : de l’arithmétique, une quantité de données difficile à se représenter, et une opération élémentaire répétée un très grand nombre de fois."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#programmation-classique",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#programmation-classique",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "En programmation classique, une personne écrit les règles à suivre. Le programme applique ces règles à des données puis fournit un résultat.\n\n\n\n\n\n\nExemple :\nSI message CONTIENT \"vous avez gagné\" ET message CONTIENT \"cliquez ici\" \nALORS\nDÉBUT SI\n    marquer_comme_spam()\nFIN SI\nCette approche fonctionne parfaitement tant que le problème peut se décrire par des règles explicites."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#exercice-1",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#exercice-1",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Écrivez la règle qui permettrait de distinguer la photo d’un chat de celle d’un chien. Une règle utilisable par une machine, qui ne reçoit rien d’autre que des couleurs de pixels, donc pas « il a des moustaches »."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#apprentissage-automatique-machine-learning",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#apprentissage-automatique-machine-learning",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "En apprentissage automatique (machine learning), les règles ne sont plus fournies. Ce qui est fourni, ce sont des exemples accompagnés des bonnes réponses (des milliers de photos « étiquetées ») et une procédure d’entraînement qui cherche seule les réglages permettant de retrouver ces réponses."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#exercice-2",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#exercice-2",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Cochez l’approche la plus adaptée pour chaque tâche.\n\n\n\n\n\n\n\n\n\nTâche\nProgrammation classique\nApprentissage automatique\n\n\n\n\nCalculer la moyenne des notes d’une classe\n\n\n\n\nDétecter si une photo contient un chat\n\n\n\n\nConvertir des degrés Celsius en degrés Fahrenheit\n\n\n\n\nRecommander une chanson selon les écoutes précédentes"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#deep-learning-apprendre-avec-plusieurs-couches",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#deep-learning-apprendre-avec-plusieurs-couches",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Le deep learning est une famille de méthodes d’apprentissage automatique qui utilise des réseaux de neurones artificiels organisés en plusieurs couches. Chaque couche travaille sur le résultat de la précédente et monte d’un cran en abstraction. Le mot « profond » indique simplement qu’il y a plusieurs couches de calcul, pas que la machine comprend le monde comme un humain."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#les-paramètres-dun-neurone",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#les-paramètres-dun-neurone",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Plusieurs paramètres permettent de modifier le comportement du neurone artificiel."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#exemple-trivial-de-fonctionnement-décider-de-sortir-ou-non-un-soir-de-semaine",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#exemple-trivial-de-fonctionnement-décider-de-sortir-ou-non-un-soir-de-semaine",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Un modèle n’est pas programmé règle par règle : il est entraîné. Ce qu’il « sait » est stocké dans des nombres, non dans des phrases. Les règles ne sont pas clairement visibles."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#entraîner-la-machine-cest-ajuster-les-poids-des-couches-des-neurones",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#entraîner-la-machine-cest-ajuster-les-poids-des-couches-des-neurones",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Pendant l’entraînement, le modèle fait une prédiction, compare cette prédiction à la réponse attendue, puis modifie de nombreux paramètres internes, principalement les poids. L’objectif est de réduire l’erreur, exemple après exemple.\n\n\n\nProcessus d’entrainement d’un réseau de neurones (source : Canva IA)"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#un-algorithme-de-minimisation-derreur-la-descente-de-gradient",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#un-algorithme-de-minimisation-derreur-la-descente-de-gradient",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "La descente de gradient est un algorithme qui aide à choisir de petits ajustements allant dans le sens d’une erreur plus faible. Il ne garantit pas à lui seul un modèle juste ou sans biais."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#les-données-comptent-autant-que-le-modèle",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#les-données-comptent-autant-que-le-modèle",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Le modèle ne dispose d’aucune source en dehors de ses exemples. Deux conséquences suivent directement :\n\nQuantité : avec trop peu d’exemples, aucune régularité fiable ne peut être dégagée.\n\nQualité et diversité : pour couvrir tous les cas de figure."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#exercice-3",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#exercice-3",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "En 2025, une étude a montré que des générateurs d’images représentaient presque toujours « un chirurgien » par un homme blanc. Expliquez la raison possible de ce biais ? Comment les réduire ?\nRéférence : Associated Press, 2025."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#les-llm-prédire-la-suite-dun-texte",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#les-llm-prédire-la-suite-dun-texte",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Les grands modèles de langage (Large Language Models, ou LLM) constituent une catégorie de modèles d’apprentissage profond entraînés à l’aide d’immenses quantités de données pour comprendre et générer des textes en langage naturel.\nLes LLM fonctionnent comme des machines de prédiction statistique géantes qui prédisent à plusieurs reprises le mot suivant dans une séquence. Ils apprennent des schémas et génèrent un langage qui suit ces schémas.\nIls demandent un prompt en entrée, un texte découpé en tokens (des morceaux de mots) qu’ils vont chercher à compléter.\n\n\n\nUn prompt constitué de ses tokens"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#du-token-à-la-représentation-vectorielle",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#du-token-à-la-représentation-vectorielle",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Les vecteurs de mots (embeddings) sont une façon pour une IA de transformer du texte en vecteurs numériques qu’elle peut comprendre et comparer. En résumé, ils aident l’IA à “comprendre” le sens plutôt que seulement les mots.\n\n\n\n\n\n\n\nAstuceExemple\n\n\n\nroi - homme + femme \\(\\approx\\) reine\n\n\n\n\n\n\n\nReprésentation des mots dans un espace multidimensionnel"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#génération-du-texte-et-température",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#génération-du-texte-et-température",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Une fois le prompt analysé. Le modèle a pour objectif de prédire le token suivant afin de générer, de proche en proche la réponse complète.\nLe modèle ne choisit pas toujours le token le plus probable. La température règle le degré de variété des choix.\n\nUne température basse rend généralement la réponse plus prévisible ;\nune température élevée produit des choix plus variés, mais aussi parfois moins pertinents."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#comment-un-llm-est-il-entraîné",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#comment-un-llm-est-il-entraîné",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "L’entraînement se déroule en plusieurs étapes complémentaires.\n\n\n\nPré-entraînement : réglage des poids du modèle pour prédire le token suivant à très grande échelle.\nRéglage par instructions (fine-tuning) : Apprendre avec des exemples « demande / réponse attendue ».\nRLHF (Reinforcement Learning from Human Feedback), apprentissage par renforcement à partir de retours humains."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#exercice-6",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#exercice-6",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Voici une liste présentant 4 limites des LLM. Pour chaque cas, vous expliquerez la raison technique qui en est la cause.\n\n\n\nHallucinations\nUne IA générative peut produire une information fausse avec un ton convaincant.\n\n\n\n\n\n\n\n\nBiais\nUn modèle peut reproduire ou amplifier des biais présents dans ses données.\n\n\n\n\n\n\n\n\n\n\nImpact écologique\nEntraîner et utiliser de grands modèles consomme de grandes quantités d’électricité et de ressources (minerais pour concevoir les circuits électroniques notamment).\n\n\n\n\n\n\n\n\nRaisonnement limité\nUne réponse cohérente n’est pas une preuve de compréhension ou de vérité."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#à-retenir",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/cours.html#à-retenir",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Contrairement à un programme classique, une IA générative (provenant de l’apprentissage automatique) n’applique pas des règles écrites explicitement par un humain : elle produit une réponse à partir de ce qu’elle a appris dans ses données. Son fonctionnement interne reste donc difficile à expliquer précisément.\nIl est essentiel de connaître ses limites avant de l’utiliser : elle peut notamment produire des informations fausses, reproduire des biais ou donner une impression de raisonnement sans réellement comprendre. De plus, son entraînement et son utilisation ont un impact environnemental non négligeable.\n\n\n\n\nComment fonctionne une IA générative ? , A.D. Martin\nIllustrations, chatGPT , GPT-5.6 Terra"
+  },
+  {
+    "objectID": "2e-annee/algorithmique/index.html",
+    "href": "2e-annee/algorithmique/index.html",
+    "title": "Algorithmique",
+    "section": "",
+    "text": "Les supports de ce chapitre seront ajoutés progressivement."
+  },
+  {
+    "objectID": "1re-annee/programmation/index.html",
+    "href": "1re-annee/programmation/index.html",
+    "title": "Programmation",
+    "section": "",
+    "text": "Ouvrir les activités de programmation existantes"
+  },
+  {
+    "objectID": "1re-annee/enjeux-sociaux/index.html",
+    "href": "1re-annee/enjeux-sociaux/index.html",
+    "title": "Enjeux sociaux",
+    "section": "",
+    "text": "Les supports de ce chapitre seront ajoutés progressivement."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Cours d’informatique",
+    "section": "",
+    "text": "Retrouvez les cours, les présentations et les documents de travail par année et par chapitre."
+  },
+  {
+    "objectID": "index.html#re-année",
+    "href": "index.html#re-année",
+    "title": "Cours d’informatique",
+    "section": "1re année",
+    "text": "1re année\nLes bases de la programmation, les données et le fonctionnement des ordinateurs.\nExplorer les chapitres"
+  },
+  {
+    "objectID": "index.html#e-année",
+    "href": "index.html#e-année",
+    "title": "Cours d’informatique",
+    "section": "2e année",
+    "text": "2e année\nApprofondir la programmation, les algorithmes, les réseaux et les enjeux sociaux.\nExplorer les chapitres"
+  },
+  {
+    "objectID": "index.html#à-découvrir",
+    "href": "index.html#à-découvrir",
+    "title": "Cours d’informatique",
+    "section": "À découvrir",
+    "text": "À découvrir\nIntroduction à l’intelligence artificielle : cours, présentation et fiche élève."
+  },
+  {
+    "objectID": "1re-annee/architecture-ordinateurs/index.html",
+    "href": "1re-annee/architecture-ordinateurs/index.html",
+    "title": "Architecture des ordinateurs",
+    "section": "",
+    "text": "Les supports de ce chapitre seront ajoutés progressivement."
+  },
+  {
+    "objectID": "1re-annee/index.html",
+    "href": "1re-annee/index.html",
+    "title": "Cours de 1re année",
+    "section": "",
+    "text": "Accéder au chapitre\n\n\n\nAccéder au chapitre\n\n\n\nAccéder au chapitre\n\n\n\nAccéder au chapitre"
+  },
+  {
+    "objectID": "1re-annee/index.html#programmation",
+    "href": "1re-annee/index.html#programmation",
+    "title": "Cours de 1re année",
+    "section": "",
+    "text": "Accéder au chapitre"
+  },
+  {
+    "objectID": "1re-annee/index.html#représentation-des-données",
+    "href": "1re-annee/index.html#représentation-des-données",
+    "title": "Cours de 1re année",
+    "section": "",
+    "text": "Accéder au chapitre"
+  },
+  {
+    "objectID": "1re-annee/index.html#enjeux-sociaux",
+    "href": "1re-annee/index.html#enjeux-sociaux",
+    "title": "Cours de 1re année",
+    "section": "",
+    "text": "Accéder au chapitre"
+  },
+  {
+    "objectID": "1re-annee/index.html#architecture-des-ordinateurs",
+    "href": "1re-annee/index.html#architecture-des-ordinateurs",
+    "title": "Cours de 1re année",
+    "section": "",
+    "text": "Accéder au chapitre"
+  },
+  {
+    "objectID": "1re-annee/representation-donnees/index.html",
+    "href": "1re-annee/representation-donnees/index.html",
+    "title": "Représentation des données",
+    "section": "",
+    "text": "Les supports de ce chapitre seront ajoutés progressivement."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/index.html",
+    "href": "2e-annee/enjeux-sociaux/index.html",
+    "title": "Enjeux sociaux",
+    "section": "",
+    "text": "Introduction à l’intelligence artificielle\nCours web, présentation et fiche élève."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/index.html",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/index.html",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "",
+    "text": "Comprendre les grands principes, les usages et les limites de l’IA."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/index.html#le-cours",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/index.html#le-cours",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "Le cours",
+    "text": "Le cours\nLire les explications et retrouver les activités.\nConsulter le cours"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/index.html#la-présentation",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/index.html#la-présentation",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "La présentation",
+    "text": "La présentation\nOuvrir les diapositives pour la séance en classe.\nOuvrir la présentation"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/index.html#la-fiche-élève",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/index.html#la-fiche-élève",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "La fiche élève",
+    "text": "La fiche élève\nTélécharger le document de travail au format PDF.\nTélécharger la fiche"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/index.html#le-tp",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/index.html#le-tp",
+    "title": "Introduction à l’intelligence artificielle",
+    "section": "Le TP",
+    "text": "Le TP\nExpérimenter et consigner ses observations dans un notebook.\nAccéder au TP"
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/index.html",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/index.html",
+    "title": "TP — IA générative",
+    "section": "",
+    "text": "Entraîner un modèle, explorer ses limites et consigner vos observations. Durée indicative : deux périodes de 45 minutes."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/index.html#travailler-dans-le-navigateur",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/index.html#travailler-dans-le-navigateur",
+    "title": "TP — IA générative",
+    "section": "Travailler dans le navigateur",
+    "text": "Travailler dans le navigateur\n\nTéléchargez le notebook.\nOuvrez Basthon.\nDans Basthon, utilisez le bouton Ouvrir un fichier (icône de dossier) et sélectionnez le fichier .ipynb téléchargé.\nComplétez les cellules de réponse. Maj + Entrée exécute une cellule et passe à la suivante.\n\nLes images sont incluses dans le notebook téléchargé. Aucune installation de Python n’est nécessaire. Les activités Teachable Machine, TensorFlow Playground et Copilot s’ouvrent depuis les liens du TP.\n\n\n\n\n\n\nImportantGarder votre travail\n\n\n\nTéléchargez régulièrement votre notebook complété depuis Basthon, puis remettez-le selon les consignes du professeur. Vos réponses ne sont pas envoyées automatiquement au professeur."
+  },
+  {
+    "objectID": "2e-annee/enjeux-sociaux/introduction-ia/tp/index.html#consignes-et-ressources",
+    "href": "2e-annee/enjeux-sociaux/introduction-ia/tp/index.html#consignes-et-ressources",
+    "title": "TP — IA générative",
+    "section": "Consignes et ressources",
+    "text": "Consignes et ressources\nLire les consignes sur le site\nPour joindre les images à Copilot : Poule, Audi, Drapeau."
+  },
+  {
+    "objectID": "2e-annee/programmation/index.html",
+    "href": "2e-annee/programmation/index.html",
+    "title": "Programmation",
+    "section": "",
+    "text": "Les supports de ce chapitre seront ajoutés progressivement."
+  }
+]

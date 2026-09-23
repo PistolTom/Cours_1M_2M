@@ -1,0 +1,79 @@
+:root {
+  --ia-blue: #174f7c;
+  --ia-blue-pale: #e9f2f8;
+  --ia-teal: #087e8b;
+  --ia-gold: #df9b21;
+  --ia-coral: #c65d3f;
+  --ia-violet: #6950a1;
+}
+
+.reveal h1, .reveal h2 { color: var(--ia-blue); }
+.reveal strong { color: var(--ia-blue); }
+.reveal .slides { text-align: left; }
+.reveal .slides section { box-sizing: border-box; padding: .15em .35em; }
+.reveal h2 { font-size: 1.42em; line-height: 1.08; margin: 0 0 .35em; }
+.reveal h3 { font-size: 1.05em; margin: .25em 0; }
+.reveal p, .reveal li { font-size: .86em; line-height: 1.22; }
+.reveal p { margin: .35em 0; }
+.reveal ul, .reveal ol { margin: .35em 0; padding-left: 1.35em; }
+.reveal ul > li, .reveal ol > li { padding-left: .2em; }
+/* Reveal.js réduit les admonitions à 70 % par défaut : on les aligne sur le texte du slide. */
+.reveal .slides section div.callout { font-size: 1em; }
+.reveal .columns .column .quarto-figure-center figcaption { text-align: center !important; }
+.reveal .fiche-objectifs { margin: .25em 0; padding: .3em 0; }
+.reveal .fiche-objectifs::before { display: none; }
+.reveal .fiche-objectifs ul { list-style: none; margin: .35em 0; padding: 0; }
+.reveal .fiche-objectifs li { margin: .28em 0; padding-left: 1.15em; position: relative; }
+.reveal .fiche-objectifs li::before { color: var(--ia-blue); content: "•"; left: 0; position: absolute; }
+.reveal .fiche-exercise::before { display: none; }
+.reveal .fiche-exercise ol { counter-reset: exercise-item; list-style: none; margin: .45em 0; padding: 0; }
+.reveal .fiche-exercise ol > li { counter-increment: exercise-item; padding-left: 1.45em; position: relative; }
+.reveal .fiche-exercise ol > li::before { content: counter(exercise-item) "."; left: 0; position: absolute; }
+/* Dans toute colonne, l’espacement vertical reste compact. */
+.reveal .columns .column > ol > li, .reveal .columns .column > ul > li { margin-bottom: .42em; }
+.reveal .exercise-choice-table table { font-size: .78em; margin: .45em auto; table-layout: fixed; width: 100%; }
+.reveal .exercise-choice-table th:first-child, .reveal .exercise-choice-table td:first-child { width: 50%; }
+.reveal .exercise-choice-table th:nth-child(2), .reveal .exercise-choice-table td:nth-child(2), .reveal .exercise-choice-table th:nth-child(3), .reveal .exercise-choice-table td:nth-child(3) { width: 25%; }
+.reveal .exercise-choice-table th { background: var(--ia-blue); color: white; }
+.reveal .exercise-choice-table td:nth-child(2), .reveal .exercise-choice-table td:nth-child(3) { font-size: 1.25em; text-align: center; }
+
+.schema {
+  background: var(--ia-blue-pale);
+  border-left: 6px solid var(--ia-blue);
+  border-radius: .4rem;
+  margin: 1rem 0;
+  padding: .7rem 1rem;
+  text-align: left;
+}
+
+.schema-flow {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem;
+  justify-content: center;
+  margin: .55rem 0;
+}
+
+.schema-step {
+  background: var(--ia-blue-pale);
+  border: 2px solid var(--ia-blue);
+  border-radius: .5rem;
+  flex: 1 1 130px;
+  padding: .4rem .55rem;
+  text-align: center;
+}
+
+.schema-arrow { align-self: center; color: var(--ia-gold); font-size: 1.35em; font-weight: 700; }
+
+.risk-grid {
+  display: grid;
+  gap: .55rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: .55rem 0;
+}
+
+.risk-card { border-left: 5px solid var(--ia-coral); background: #fff3ef; border-radius: .35rem; padding: .4rem .55rem; }
+.reveal .image-arrow { align-items: center; color: var(--ia-gold); display: flex; font-size: 2.3em; font-weight: 700; height: 100%; justify-content: center; min-height: 10rem; }
+
+@media (max-width: 700px) { .risk-grid { grid-template-columns: 1fr; } }
