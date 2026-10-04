@@ -54,3 +54,11 @@ body.quarto-dark .fiche-video-card small { color: #8dc8f4; }
 @media (max-width: 575px) {
   .navbar .site-theme-switch { margin-inline: .25rem; padding-inline: .5rem; font-size: .8rem; }
 }
+
+/* Corrigés accessibles au clavier et repliés à l’ouverture du cours. */
+.exercise-solution { margin: 1rem 0 1.5rem; padding: .8rem 1rem; border: 1px solid var(--site-border); border-radius: .55rem; background: var(--site-card); }
+.exercise-solution summary { cursor: pointer; font-weight: 600; min-height: 44px; align-content: center; color: var(--ia-blue); }
+.exercise-solution summary:focus-visible { outline: 3px solid #168b84; outline-offset: 3px; }
+.exercise-solution .solution-hide, .exercise-solution[open] .solution-show { display: none; }
+.exercise-solution[open] .solution-hide { display: inline; }
+.exercise-solution[open] summary { margin-bottom: .7rem; }

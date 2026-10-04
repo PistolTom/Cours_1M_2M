@@ -429,6 +429,12 @@ traite des données selon un modèle et un objectif définis par des humains. --
 <p>Écrivez la règle qui permettrait de distinguer la photo d’un chat de celle d’un chien. Une règle utilisable par une machine, qui ne reçoit rien d’autre que des couleurs de pixels, donc pas « il a des moustaches ».</p>
 <textarea class="fiche-answer" rows="5" aria-label="Zone de réponse" placeholder="Écrivez votre réponse ici…"></textarea>
 </div>
+<details class="exercise-solution" id="corrige-exercice-1">
+<summary><span class="solution-show">Afficher le corrigé</span><span class="solution-hide">Masquer le corrigé</span><span class="visually-hidden"> de l’exercice 1</span></summary>
+<p><strong>Éléments de réponse :</strong> il est très difficile d’écrire une règle simple et fiable qui distingue tous les chats de tous les chiens à partir des pixels. La couleur, la taille et la position de l’animal varient avec la race, la lumière, le décor et l’angle de vue.</p>
+<p>On pourrait programmer une règle qui compare les pixels à une photo de référence, mais elle échouerait dès que la photo change un peu. L’objectif de l’exercice est de constater cette difficulté, pas de trouver une règle universelle.</p>
+<p>L’apprentissage automatique permet d’apprendre des régularités à partir de nombreuses photos de chats et de chiens étiquetées, puis de tester le modèle sur de nouvelles photos.</p>
+</details>
 <!-- --------------------------------------------------------- -->
 </section>
 <section id="apprentissage-automatique-machine-learning" class="level2">
@@ -486,6 +492,46 @@ une prédiction sur un nouvel exemple. -->
 </table>
 </div>
 </div>
+<details class="exercise-solution" id="corrige-exercice-2">
+<summary><span class="solution-show">Afficher le corrigé</span><span class="solution-hide">Masquer le corrigé</span><span class="visually-hidden"> de l’exercice 2</span></summary>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tâche</th>
+<th style="text-align: left;">Approche attendue</th>
+<th style="text-align: left;">Pourquoi ?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Calculer la moyenne des notes</td>
+<td style="text-align: left;">Programmation classique</td>
+<td style="text-align: left;">Additionner les notes et diviser par leur nombre suit une règle explicite.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Détecter un chat sur une photo</td>
+<td style="text-align: left;">Apprentissage automatique</td>
+<td style="text-align: left;">L’apparence des chats et les conditions de prise de vue varient beaucoup.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Convertir des degrés Celsius en Fahrenheit</td>
+<td style="text-align: left;">Programmation classique</td>
+<td style="text-align: left;">Appliquer la formule : °F = °C × 9 / 5 + 32.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Recommander une chanson</td>
+<td style="text-align: left;">Apprentissage automatique</td>
+<td style="text-align: left;">Apprendre des régularités dans les goûts et les écoutes permet de personnaliser les recommandations.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nuance :</strong> une recommandation simple peut aussi utiliser des règles écrites à la main. Ici, on cherche l’approche la plus adaptée à une personnalisation à partir de nombreux exemples.</p>
+</details>
 </section>
 <section id="deep-learning-apprendre-avec-plusieurs-couches" class="level2">
 <h2 class="anchored" data-anchor-id="deep-learning-apprendre-avec-plusieurs-couches">Deep Learning : apprendre avec plusieurs couches</h2>
@@ -583,6 +629,18 @@ des biais, même si l'algorithme est très sophistiqué. -->
 <p>Référence : <a href="https://apnews.com/article/artificial-intelligence-dei-trump-algorithmic-bias-woke-ai-8302e12dd74df69a1adc6565710f033d" target="_blank" rel="noopener">Associated Press, 2025</a>.</p>
 <textarea class="fiche-answer" rows="3" aria-label="Zone de réponse" placeholder="Écrivez votre réponse ici…"></textarea>
 </div>
+<details class="exercise-solution" id="corrige-exercice-3">
+<summary><span class="solution-show">Afficher le corrigé</span><span class="solution-hide">Masquer le corrigé</span><span class="visually-hidden"> de l’exercice 3</span></summary>
+<p><strong>Cause possible :</strong> les données d’entraînement peuvent associer plus souvent la profession de chirurgien à des hommes blancs. Le modèle apprend puis reproduit ces associations et les stéréotypes présents dans les exemples. Ce n’est pas une règle sur les personnes qui peuvent exercer ce métier.</p>
+<p><strong>Pour réduire ce biais :</strong></p>
+<ul>
+<li>diversifier les exemples et améliorer leur représentativité ;</li>
+<li>examiner les annotations et les déséquilibres dans les données ;</li>
+<li>tester les résultats pour différents genres et différentes couleurs de peau ;</li>
+<li>corriger le modèle ou les données et vérifier à nouveau les résultats.</li>
+</ul>
+<p>Vérifier les images avant de les utiliser réduit la diffusion des stéréotypes, mais ne corrige pas à lui seul le modèle. Des données plus nombreuses ne suffisent pas si elles reproduisent les mêmes déséquilibres.</p>
+</details>
 <!-- ::: {.content-visible when-format="revealjs"}
 
 ## Démonstration
@@ -762,6 +820,40 @@ Une réponse cohérente n’est pas une preuve de compréhension ou de vérité.
 </div>
 </div>
 </div>
+<details class="exercise-solution" id="corrige-exercice-6">
+<summary><span class="solution-show">Afficher le corrigé</span><span class="solution-hide">Masquer le corrigé</span><span class="visually-hidden"> de l’exercice 6</span></summary>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Limite</th>
+<th style="text-align: left;">Explication technique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Hallucinations</strong></td>
+<td style="text-align: left;">Le modèle apprend à produire une suite de tokens plausible, ce qui ne garantit pas sa vérité. Il peut compléter une information manquante par une invention. Une température basse ne supprime pas ce risque ; une réponse fausse peut aussi être produite sans tirage aléatoire.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Biais</strong></td>
+<td style="text-align: left;">Le modèle apprend des régularités présentes dans ses données, y compris des stéréotypes ou des déséquilibres. Les choix d’annotation, d’entraînement et d’évaluation peuvent aussi influencer ses réponses.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Impact écologique</strong></td>
+<td style="text-align: left;">L’entraînement demande de nombreux calculs pour ajuster les paramètres. Chaque utilisation demande aussi des calculs et de l’électricité. La fabrication des équipements et le refroidissement des centres de données consomment également des ressources. L’impact dépend notamment du modèle, du matériel et du nombre d’utilisations.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Raisonnement limité</strong></td>
+<td style="text-align: left;">Produire un texte cohérent ne garantit pas que chaque étape du raisonnement est valide. Un LLM peut résoudre certains problèmes, mais aussi commettre des erreurs logiques ou échouer lorsqu’une situation diffère de ses exemples. Il faut vérifier les étapes et les résultats.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>À retenir :</strong> il serait trop absolu de dire qu’un LLM ne peut jamais raisonner. Ses capacités ne garantissent ni une réponse correcte, ni une compréhension comparable à celle d’un humain.</p>
+</details>
 </section>
 <section id="à-retenir" class="level2">
 <h2 class="anchored" data-anchor-id="à-retenir">À retenir</h2>
